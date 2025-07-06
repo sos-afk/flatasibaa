@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ | 株式会社フラット</title>
+  <meta name="description" content="株式会社フラットへのお問い合わせ。足場工事やプレハブリースについてのご質問、お見積りのご依頼など、お気軽にお問い合わせください。">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-sans text-gray-800">
+  <!-- ヘッダー -->
+  <header class="fixed w-full bg-white shadow-md z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html" class="flex items-center">
+        <h1 class="text-2xl font-bold text-trust-blue">株式会社フラット</h1>
+      </a>
+      
+      <!-- PC用ナビゲーション -->
+      <nav class="hidden md:flex items-center">
+        <ul class="flex space-x-6">
+          <li><a href="index.html" class="hover:text-trust-blue transition-colors">ホーム</a></li>
+          <li><a href="service.html" class="hover:text-trust-blue transition-colors">事業内容</a></li>
+          <li><a href="works.html" class="hover:text-trust-blue transition-colors">施工事例</a></li>
+          <li><a href="news.html" class="hover:text-trust-blue transition-colors">お知らせ</a></li>
+          <li><a href="faq.html" class="hover:text-trust-blue transition-colors">よくある質問</a></li>
+          <li><a href="contact.html" class="bg-safety-orange text-white px-4 py-2 rounded hover:bg-opacity-90 transition-colors">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      
+      <!-- モバイル用メニューボタン -->
+      <button class="md:hidden text-trust-blue" id="mobile-menu-button">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    
+    <!-- モバイル用ナビゲーション -->
+    <nav class="md:hidden hidden bg-white" id="mobile-menu">
+      <ul class="container mx-auto px-4 py-2 space-y-3">
+        <li><a href="index.html" class="block py-2">ホーム</a></li>
+        <li><a href="service.html" class="block py-2">事業内容</a></li>
+        <li><a href="works.html" class="block py-2">施工事例</a></li>
+        <li><a href="news.html" class="block py-2">お知らせ</a></li>
+        <li><a href="faq.html" class="block py-2">よくある質問</a></li>
+        <li><a href="contact.html" class="block py-2 mt-4 bg-safety-orange text-white px-4 py-2 rounded text-center">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ページタイトル -->
+  <section class="pt-32 pb-12 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center text-trust-blue">お問い合わせ</h2>
+      <p class="text-center mt-4 text-lg">ご質問・お見積りのご依頼など、お気軽にお問い合わせください</p>
+    </div>
+  </section>
+
+  <!-- お問い合わせ情報 -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <!-- 電話でのお問い合わせ -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm animate-on-scroll">
+            <h3 class="text-xl font-bold mb-4 text-trust-blue">お電話でのお問い合わせ</h3>
+            <div class="flex items-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-safety-orange mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              <span class="text-2xl font-bold">092-834-5315</span>
+            </div>
+            <p class="text-gray-600 mb-2">受付時間: 平日 9:00〜18:00</p>
+            <p class="text-gray-600">※土日祝日は休業</p>
+            
+            <h4 class="font-bold mt-6 mb-2">各営業所のお問い合わせ先</h4>
+            <ul class="space-y-2">
+              <li>
+                <p class="font-medium">【福岡南営業所】</p>
+                <p class="text-gray-600">TEL: 0942-65-8465</p>
+              </li>
+              <li>
+                <p class="font-medium">【福岡東営業所】</p>
+                <p class="text-gray-600">TEL: 0947-23-2128</p>
+              </li>
+              <li>
+                <p class="font-medium">【唐津営業所】</p>
+                <p class="text-gray-600">TEL: 0955-58-9001</p>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- メールでのお問い合わせ -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm animate-on-scroll">
+            <h3 class="text-xl font-bold mb-4 text-trust-blue">メールでのお問い合わせ</h3>
+            <p class="mb-4">下記のお問い合わせフォームより、24時間いつでもお問い合わせいただけます。</p>
+            <p class="mb-4">お問い合わせいただいた内容は、翌営業日までに確認し、担当者より折り返しご連絡いたします。</p>
+            <p class="text-gray-600">※お急ぎの場合は、お電話でのお問い合わせをおすすめします。</p>
+          </div>
+        </div>
+        
+        <!-- お問い合わせフォーム -->
+        <div class="bg-white border border-gray-200 rounded-lg p-6 md:p-8 shadow-sm animate-on-scroll">
+          <h3 class="text-2xl font-bold mb-6 text-trust-blue">お問い合わせフォーム</h3>
+          
+          <form id="contact-form" class="space-y-6">
+            <!-- 会社名 -->
+            <div>
+              <label for="company" class="block mb-2 font-medium">会社名 <span class="text-red-500">*</span></label>
+              <input type="text" id="company" name="company" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-trust-blue" required>
+            </div>
+            
+            <!-- ご担当者名 -->
+            <div>
+              <label for="name" class="block mb-2 font-medium">ご担当者名 <span class="text-red-500">*</span></label>
+              <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-trust-blue" required>
+            </div>
+            
+            <!-- メールアドレス -->
+            <div>
+              <label for="email" class="block mb-2 font-medium">メールアドレス <span class="text-red-500">*</span></label>
+              <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-trust-blue" required>
+            </div>
+            
+            <!-- 電話番号 -->
+            <div>
+              <label for="phone" class="block mb-2 font-medium">電話番号 <span class="text-red-500">*</span></label>
+              <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-trust-blue" required>
+            </div>
+            
+            <!-- お問い合わせ内容 -->
+            <div>
+              <label for="message" class="block mb-2 font-medium">お問い合わせ内容 <span class="text-red-500">*</span></label>
+              <textarea id="message" name="message" rows="6" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-trust-blue" required></textarea>
+            </div>
+            
+            <!-- プライバシーポリシー -->
+            <div class="flex items-start">
+              <input type="checkbox" id="privacy" name="privacy" class="mt-1 mr-2" required>
+              <label for="privacy" class="text-sm">
+                <span class="text-red-500">*</span> プライバシーポリシーに同意します。お問い合わせいただいた個人情報は、お問い合わせへの対応のみに利用し、その他の目的には使用いたしません。
+              </label>
+            </div>
+            
+            <!-- 送信ボタン -->
+            <div class="text-center">
+              <button type="submit" class="px-8 py-3 bg-safety-orange text-white font-medium rounded-lg hover:bg-opacity-90 transition-colors">送信する</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- アクセスマップ -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-12 text-trust-blue">アクセスマップ</h3>
+      
+      <div class="max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- 本社 -->
+          <div class="animate-on-scroll">
+            <h4 class="text-xl font-bold mb-4">本社</h4>
+            <div class="bg-gray-200 w-full h-64 mb-4 rounded-lg"></div>
+            <p class="font-medium">〒819-0383 福岡県福岡市西区田尻東1丁目14-3</p>
+            <p class="text-gray-600 mt-2">TEL: 092-834-5315 / FAX: 092-834-5340</p>
+          </div>
+          
+          <!-- 福岡南営業所 -->
+          <div class="animate-on-scroll">
+            <h4 class="text-xl font-bold mb-4">福岡南営業所</h4>
+            <div class="bg-gray-200 w-full h-64 mb-4 rounded-lg"></div>
+            <p class="font-medium">〒830-1212 福岡県三井郡大刀洗町甲条926-1</p>
+            <p class="text-gray-600 mt-2">TEL: 0942-65-8465 / FAX: 0942-65-8466</p>
+          </div>
+          
+          <!-- 福岡東営業所 -->
+          <div class="animate-on-scroll">
+            <h4 class="text-xl font-bold mb-4">福岡東営業所</h4>
+            <div class="bg-gray-200 w-full h-64 mb-4 rounded-lg"></div>
+            <p class="font-medium">〒825-0002 福岡県田川市伊田4481-1</p>
+            <p class="text-gray-600 mt-2">TEL: 0947-23-2128 / FAX: 0947-23-2129</p>
+          </div>
+          
+          <!-- 唐津営業所 -->
+          <div class="animate-on-scroll">
+            <h4 class="text-xl font-bold mb-4">唐津営業所</h4>
+            <div class="bg-gray-200 w-full h-64 mb-4 rounded-lg"></div>
+            <p class="font-medium">〒847-0832 佐賀県唐津市石志3276</p>
+            <p class="text-gray-600 mt-2">TEL: 0955-58-9001 / FAX: 0955-58-9002</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="bg-trust-blue text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+        <div class="text-center md:text-left mb-6 md:mb-0">
+          <h2 class="text-2xl font-bold mb-2">株式会社フラット</h2>
+          <p class="text-sm">〒819-0383 福岡県福岡市西区田尻東1丁目14-3</p>
+          <p class="text-sm">TEL: 092-834-5315</p>
+        </div>
+        
+        <nav>
+          <ul class="flex flex-wrap justify-center">
+            <li class="mx-3 my-2"><a href="index.html" class="hover:text-safety-orange transition-colors">ホーム</a></li>
+            <li class="mx-3 my-2"><a href="service.html" class="hover:text-safety-orange transition-colors">事業内容</a></li>
+            <li class="mx-3 my-2"><a href="works.html" class="hover:text-safety-orange transition-colors">施工事例</a></li>
+            <li class="mx-3 my-2"><a href="news.html" class="hover:text-safety-orange transition-colors">お知らせ</a></li>
+            <li class="mx-3 my-2"><a href="faq.html" class="hover:text-safety-orange transition-colors">よくある質問</a></li>
+            <li class="mx-3 my-2"><a href="contact.html" class="hover:text-safety-orange transition-colors">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+      <div class="text-center">
+        <p class="text-sm">&copy; 2025 株式会社フラット All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

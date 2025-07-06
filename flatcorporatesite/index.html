@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>株式会社フラット | チームワークで、安全を築く。</title>
+  <meta name="description" content="株式会社フラットは福岡県を拠点に、建設現場における仮設足場工事、特殊足場工事、仮設ハウス・プレハブのリースを行っています。チームワークを活かした安全な作業と安心な足場を提供します。">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-sans text-gray-800">
+  <!-- ヘッダー -->
+  <header class="fixed w-full bg-white shadow-md z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html" class="flex items-center">
+        <h1 class="text-2xl font-bold text-trust-blue">株式会社フラット</h1>
+      </a>
+      
+      <!-- PC用ナビゲーション -->
+      <nav class="hidden md:flex items-center">
+        <ul class="flex space-x-6">
+          <li><a href="index.html" class="text-trust-blue font-medium hover:text-safety-orange transition-colors">ホーム</a></li>
+          <li><a href="service.html" class="hover:text-trust-blue transition-colors">事業内容</a></li>
+          <li><a href="works.html" class="hover:text-trust-blue transition-colors">施工事例</a></li>
+          <li><a href="news.html" class="hover:text-trust-blue transition-colors">お知らせ</a></li>
+          <li><a href="faq.html" class="hover:text-trust-blue transition-colors">よくある質問</a></li>
+          <li><a href="contact.html" class="bg-safety-orange text-white px-4 py-2 rounded hover:bg-opacity-90 transition-colors">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      
+      <!-- モバイル用メニューボタン -->
+      <button class="md:hidden text-trust-blue" id="mobile-menu-button">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    
+    <!-- モバイル用ナビゲーション -->
+    <nav class="md:hidden hidden bg-white" id="mobile-menu">
+      <ul class="container mx-auto px-4 py-2 space-y-3">
+        <li><a href="index.html" class="block py-2 text-trust-blue font-medium">ホーム</a></li>
+        <li><a href="service.html" class="block py-2">事業内容</a></li>
+        <li><a href="works.html" class="block py-2">施工事例</a></li>
+        <li><a href="news.html" class="block py-2">お知らせ</a></li>
+        <li><a href="faq.html" class="block py-2">よくある質問</a></li>
+        <li><a href="contact.html" class="block py-2 mt-4 bg-safety-orange text-white px-4 py-2 rounded text-center">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- メインビジュアル -->
+  <section class="pt-20 relative h-screen flex items-center justify-center bg-gray-100">
+    <div class="absolute inset-0 bg-black opacity-40 z-10"></div>
+    <div class="container mx-auto px-4 relative z-20 text-center text-white">
+      <h2 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">チームワークで、安全を築く。</h2>
+      <p class="text-xl md:text-2xl mb-8 animate-fade-in-delay">株式会社フラットは、安全な足場で建設現場をサポートします</p>
+      <a href="contact.html" class="inline-block bg-safety-orange text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-opacity-90 transition-colors animate-fade-in-delay-2">お問い合わせ</a>
+    </div>
+  </section>
+
+  <!-- 事業内容 -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 text-trust-blue">事業内容</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- クサビ式足場 -->
+        <div class="bg-gray-50 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow animate-on-scroll">
+          <div class="w-20 h-20 mx-auto mb-4 bg-trust-blue rounded-full flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-center mb-3">クサビ式足場</h3>
+          <p class="text-gray-600 mb-4">安全性と作業効率を両立した、最新のくさび緊結式足場を提供しています。様々な建築現場に対応可能です。</p>
+          <div class="text-center">
+            <a href="service.html#wedge-scaffold" class="inline-block text-trust-blue font-medium hover:text-safety-orange transition-colors">詳しく見る →</a>
+          </div>
+        </div>
+        
+        <!-- 特殊足場 -->
+        <div class="bg-gray-50 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow animate-on-scroll">
+          <div class="w-20 h-20 mx-auto mb-4 bg-trust-blue rounded-full flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-center mb-3">特殊足場</h3>
+          <p class="text-gray-600 mb-4">吊り足場や橋梁足場など、特殊な条件下での施工に対応した足場工事を提供しています。</p>
+          <div class="text-center">
+            <a href="service.html#special-scaffold" class="inline-block text-trust-blue font-medium hover:text-safety-orange transition-colors">詳しく見る →</a>
+          </div>
+        </div>
+        
+        <!-- 仮設ハウス・プレハブリース -->
+        <div class="bg-gray-50 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow animate-on-scroll">
+          <div class="w-20 h-20 mx-auto mb-4 bg-trust-blue rounded-full flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-center mb-3">仮設ハウス・プレハブリース</h3>
+          <p class="text-gray-600 mb-4">現場事務所や休憩所などに最適な、清潔で機能的な仮設ハウス・プレハブをリースしています。</p>
+          <div class="text-center">
+            <a href="service.html#prefab-lease" class="inline-block text-trust-blue font-medium hover:text-safety-orange transition-colors">詳しく見る →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 施工事例 -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 text-trust-blue">施工事例</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- 施工事例1 -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow animate-on-scroll">
+          <div class="h-48 bg-gray-200"></div>
+          <div class="p-4">
+            <span class="inline-block px-3 py-1 bg-trust-blue text-white text-xs rounded-full mb-2">マンション</span>
+            <h3 class="font-bold mb-2">福岡市中央区マンション改修工事</h3>
+            <p class="text-gray-600 text-sm">10階建てマンションの大規模修繕工事における足場設置</p>
+          </div>
+        </div>
+        
+        <!-- 施工事例2 -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow animate-on-scroll">
+          <div class="h-48 bg-gray-200"></div>
+          <div class="p-4">
+            <span class="inline-block px-3 py-1 bg-trust-blue text-white text-xs rounded-full mb-2">戸建て</span>
+            <h3 class="font-bold mb-2">糸島市戸建住宅外壁塗装工事</h3>
+            <p class="text-gray-600 text-sm">2階建て戸建住宅の外壁塗装工事のための足場設置</p>
+          </div>
+        </div>
+        
+        <!-- 施工事例3 -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow animate-on-scroll">
+          <div class="h-48 bg-gray-200"></div>
+          <div class="p-4">
+            <span class="inline-block px-3 py-1 bg-trust-blue text-white text-xs rounded-full mb-2">特殊建築物</span>
+            <h3 class="font-bold mb-2">福岡市博物館改修工事</h3>
+            <p class="text-gray-600 text-sm">特殊な形状の建物に対応した足場設置</p>
+          </div>
+        </div>
+        
+        <!-- 施工事例4 -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow animate-on-scroll">
+          <div class="h-48 bg-gray-200"></div>
+          <div class="p-4">
+            <span class="inline-block px-3 py-1 bg-trust-blue text-white text-xs rounded-full mb-2">橋梁</span>
+            <h3 class="font-bold mb-2">唐津市橋梁補修工事</h3>
+            <p class="text-gray-600 text-sm">橋梁の下部を補修するための特殊足場設置</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-10">
+        <a href="works.html" class="inline-block bg-trust-blue text-white px-6 py-3 rounded hover:bg-opacity-90 transition-colors">施工事例一覧へ</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLATの強み -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 text-trust-blue">FLATの強み</h2>
+      
+      <!-- 代表挨拶 -->
+      <div class="max-w-4xl mx-auto mb-16 animate-on-scroll">
+        <h3 class="text-2xl font-bold mb-6 text-center">代表挨拶</h3>
+        <div class="bg-gray-50 p-6 md:p-8 rounded-lg shadow-md">
+          <div class="flex flex-col md:flex-row items-center md:items-start">
+            <div class="w-32 h-32 bg-gray-200 rounded-full mb-4 md:mb-0 md:mr-6 flex-shrink-0"></div>
+            <div>
+              <p class="mb-4">フラットは「縦社会」が根強い足場屋を飛び出し、チームワークあふれる「横社会」の会社にするために集まった有志が、「公明正大」（私心を挟まず、平等であるさま）を経営理念として、社名を『フラット ＦＬＡＴ』（平等）と名付けました。</p>
+              <p class="mb-4">その理念に沿って、チームワークを活かして安全な部材を多用した安全作業をもって、安心な足場を提供し続けています。</p>
+              <p class="mb-4">併せて、同業他社との情報共有も積極的行い、足場を必要とするお客様に業界全体が喜ばれるつながりを大切にすることに努めています。</p>
+              <p class="mb-4">また、各拠点においても「年齢・経験」を問わず幅広い人材を雇用することで、少しでも地域社会に貢献していく事に積極的に取り組んでおります。</p>
+              <p class="mb-4">フラットはこれからもチームワークあふれる社会を創るため、メンバー一丸となって活動していきます。</p>
+              <p>どうぞご支援・ご指導のほどよろしくお願いいたします。</p>
+              <p class="text-right mt-4 font-bold">代表取締役　北島　博美</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 企業理念 -->
+      <div class="max-w-4xl mx-auto mb-16 animate-on-scroll">
+        <h3 class="text-2xl font-bold mb-6 text-center">企業理念</h3>
+        <div class="bg-trust-blue text-white p-8 rounded-lg text-center">
+          <p class="text-xl md:text-2xl font-medium">「公明正大」</p>
+          <p class="mt-4">私心を挟まず、平等であるさま</p>
+        </div>
+      </div>
+      
+      <!-- スタッフ紹介 -->
+      <div class="animate-on-scroll">
+        <h3 class="text-2xl font-bold mb-6 text-center">スタッフ紹介</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="text-center">
+            <div class="w-full aspect-square bg-gray-200 rounded-lg mb-3"></div>
+            <p class="font-bold">山田 太郎</p>
+            <p class="text-sm text-gray-600">現場監督</p>
+          </div>
+          <div class="text-center">
+            <div class="w-full aspect-square bg-gray-200 rounded-lg mb-3"></div>
+            <p class="font-bold">佐藤 次郎</p>
+            <p class="text-sm text-gray-600">足場技術者</p>
+          </div>
+          <div class="text-center">
+            <div class="w-full aspect-square bg-gray-200 rounded-lg mb-3"></div>
+            <p class="font-bold">鈴木 花子</p>
+            <p class="text-sm text-gray-600">事務</p>
+          </div>
+          <div class="text-center">
+            <div class="w-full aspect-square bg-gray-200 rounded-lg mb-3"></div>
+            <p class="font-bold">田中 一郎</p>
+            <p class="text-sm text-gray-600">足場技術者</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ご依頼からの流れ -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 text-trust-blue">ご依頼からの流れ</h2>
+      
+      <div class="max-w-4xl mx-auto">
+        <div class="relative">
+          <!-- ステップ線 -->
+          <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-trust-blue transform -translate-x-1/2 z-0"></div>
+          
+          <!-- ステップ1 -->
+          <div class="relative z-10 flex flex-col md:flex-row items-center mb-12 animate-on-scroll">
+            <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+              <h3 class="text-xl font-bold mb-2">お問い合わせ</h3>
+              <p class="text-gray-600">お電話またはお問い合わせフォームよりご連絡ください。</p>
+            </div>
+            <div class="w-12 h-12 bg-trust-blue rounded-full flex items-center justify-center text-white font-bold text-lg z-20">1</div>
+            <div class="md:w-1/2 md:pl-12 mt-4 md:mt-0">
+              <div class="w-full h-32 bg-gray-200 rounded-lg"></div>
+            </div>
+          </div>
+          
+          <!-- ステップ2 -->
+          <div class="relative z-10 flex flex-col md:flex-row-reverse items-center mb-12 animate-on-scroll">
+            <div class="md:w-1/2 md:pl-12 mb-4 md:mb-0">
+              <h3 class="text-xl font-bold mb-2">現地調査・お見積り</h3>
+              <p class="text-gray-600">現場を確認し、最適な足場プランと正確なお見積りをご提案します。</p>
+            </div>
+            <div class="w-12 h-12 bg-trust-blue rounded-full flex items-center justify-center text-white font-bold text-lg z-20">2</div>
+            <div class="md:w-1/2 md:pr-12 md:text-right mt-4 md:mt-0">
+              <div class="w-full h-32 bg-gray-200 rounded-lg"></div>
+            </div>
+          </div>
+          
+          <!-- ステップ3 -->
+          <div class="relative z-10 flex flex-col md:flex-row items-center mb-12 animate-on-scroll">
+            <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+              <h3 class="text-xl font-bold mb-2">ご契約</h3>
+              <p class="text-gray-600">お見積り内容にご納得いただけましたら、工事のご契約をさせていただきます。</p>
+            </div>
+            <div class="w-12 h-12 bg-trust-blue rounded-full flex items-center justify-center text-white font-bold text-lg z-20">3</div>
+            <div class="md:w-1/2 md:pl-12 mt-4 md:mt-0">
+              <div class="w-full h-32 bg-gray-200 rounded-lg"></div>
+            </div>
+          </div>
+          
+          <!-- ステップ4 -->
+          <div class="relative z-10 flex flex-col md:flex-row-reverse items-center mb-12 animate-on-scroll">
+            <div class="md:w-1/2 md:pl-12 mb-4 md:mb-0">
+              <h3 class="text-xl font-bold mb-2">施工</h3>
+              <p class="text-gray-600">安全を最優先に、熟練のスタッフが丁寧に足場を組み立てます。</p>
+            </div>
+            <div class="w-12 h-12 bg-trust-blue rounded-full flex items-center justify-center text-white font-bold text-lg z-20">4</div>
+            <div class="md:w-1/2 md:pr-12 md:text-right mt-4 md:mt-0">
+              <div class="w-full h-32 bg-gray-200 rounded-lg"></div>
+            </div>
+          </div>
+          
+          <!-- ステップ5 -->
+          <div class="relative z-10 flex flex-col md:flex-row items-center animate-on-scroll">
+            <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+              <h3 class="text-xl font-bold mb-2">完了・お引き渡し</h3>
+              <p class="text-gray-600">工事完了後、安全確認を行い、お客様にご確認いただきます。</p>
+            </div>
+            <div class="w-12 h-12 bg-trust-blue rounded-full flex items-center justify-center text-white font-bold text-lg z-20">5</div>
+            <div class="md:w-1/2 md:pl-12 mt-4 md:mt-0">
+              <div class="w-full h-32 bg-gray-200 rounded-lg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- お知らせ＆会社概要 -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <!-- お知らせ -->
+        <div class="animate-on-scroll">
+          <h2 class="text-3xl font-bold mb-8 text-trust-blue">お知らせ</h2>
+          
+          <div class="space-y-4">
+            <div class="border-b pb-4">
+              <span class="inline-block text-sm text-gray-500 mb-1">2025.06.01</span>
+              <h3 class="font-bold hover:text-trust-blue transition-colors"><a href="news.html">福岡東営業所を移転しました</a></h3>
+            </div>
+            <div class="border-b pb-4">
+              <span class="inline-block text-sm text-gray-500 mb-1">2025.05.15</span>
+              <h3 class="font-bold hover:text-trust-blue transition-colors"><a href="news.html">新型足場システムの導入について</a></h3>
+            </div>
+            <div class="border-b pb-4">
+              <span class="inline-block text-sm text-gray-500 mb-1">2025.04.20</span>
+              <h3 class="font-bold hover:text-trust-blue transition-colors"><a href="news.html">安全講習会を実施しました</a></h3>
+            </div>
+          </div>
+          
+          <div class="mt-6">
+            <a href="news.html" class="inline-block text-trust-blue font-medium hover:text-safety-orange transition-colors">お知らせ一覧へ →</a>
+          </div>
+        </div>
+        
+        <!-- 会社概要 -->
+        <div class="animate-on-scroll">
+          <h2 class="text-3xl font-bold mb-8 text-trust-blue">会社概要</h2>
+          
+          <table class="w-full">
+            <tr class="border-b">
+              <th class="py-3 pr-4 text-left align-top w-1/3">会社名</th>
+              <td class="py-3">株式会社フラット　FLAT</td>
+            </tr>
+            <tr class="border-b">
+              <th class="py-3 pr-4 text-left align-top">所在地</th>
+              <td class="py-3">
+                <p class="mb-2"><strong>【本社】</strong><br>〒819-0383 福岡県福岡市西区田尻東1丁目14-3<br>TEL 092-834-5315 / FAX 092-834-5340</p>
+                <p class="mb-2"><strong>【福岡南営業所】</strong><br>〒830-1212 福岡県三井郡大刀洗町甲条926-1<br>TEL 0942-65-8465 / FAX 0942-65-8466</p>
+                <p class="mb-2"><strong>【福岡東営業所】</strong><br>〒825-0002 福岡県田川市伊田4481-1<br>TEL 0947-23-2128 / FAX 0947-23-2129</p>
+                <p><strong>【唐津営業所】</strong><br>〒847-0832 佐賀県唐津市石志3276<br>TEL 0955-58-9001 / FAX 0955-58-9002</p>
+              </td>
+            </tr>
+            <tr class="border-b">
+              <th class="py-3 pr-4 text-left">設立</th>
+              <td class="py-3">2017年2月27日</td>
+            </tr>
+            <tr class="border-b">
+              <th class="py-3 pr-4 text-left">代表取締役</th>
+              <td class="py-3">北島　博美</td>
+            </tr>
+            <tr class="border-b">
+              <th class="py-3 pr-4 text-left">資本金</th>
+              <td class="py-3">500万円</td>
+            </tr>
+            <tr class="border-b">
+              <th class="py-3 pr-4 text-left">従業員数</th>
+              <td class="py-3">36名　※専属工事職方25名含む</td>
+            </tr>
+            <tr class="border-b">
+              <th class="py-3 pr-4 text-left">事業内容</th>
+              <td class="py-3">仮設足場工事（くさび緊結式足場）、仮設ハウス・プレハブ等リース</td>
+            </tr>
+            <tr class="border-b">
+              <th class="py-3 pr-4 text-left">建設業許可</th>
+              <td class="py-3">国土交通大臣許可　(般-3） 第28149号　 とび・土工工事業</td>
+            </tr>
+            <tr class="border-b">
+              <th class="py-3 pr-4 text-left">取引銀行</th>
+              <td class="py-3">福岡銀行　周船寺支店</td>
+            </tr>
+            <tr class="border-b">
+              <th class="py-3 pr-4 text-left">関連会社</th>
+              <td class="py-3">平尾化建株式会社</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="bg-trust-blue text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+        <div class="text-center md:text-left mb-6 md:mb-0">
+          <h2 class="text-2xl font-bold mb-2">株式会社フラット</h2>
+          <p class="text-sm">〒819-0383 福岡県福岡市西区田尻東1丁目14-3</p>
+          <p class="text-sm">TEL: 092-834-5315</p>
+        </div>
+        
+        <nav>
+          <ul class="flex flex-wrap justify-center">
+            <li class="mx-3 my-2"><a href="index.html" class="hover:text-safety-orange transition-colors">ホーム</a></li>
+            <li class="mx-3 my-2"><a href="service.html" class="hover:text-safety-orange transition-colors">事業内容</a></li>
+            <li class="mx-3 my-2"><a href="works.html" class="hover:text-safety-orange transition-colors">施工事例</a></li>
+            <li class="mx-3 my-2"><a href="news.html" class="hover:text-safety-orange transition-colors">お知らせ</a></li>
+            <li class="mx-3 my-2"><a href="faq.html" class="hover:text-safety-orange transition-colors">よくある質問</a></li>
+            <li class="mx-3 my-2"><a href="contact.html" class="hover:text-safety-orange transition-colors">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+      <div class="text-center">
+        <p class="text-sm">&copy; 2025 株式会社フラット All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

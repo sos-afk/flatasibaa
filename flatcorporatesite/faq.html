@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>よくある質問 | 株式会社フラット</title>
+  <meta name="description" content="株式会社フラットへのよくある質問と回答。足場工事やプレハブリースに関するご質問にお答えします。">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-sans text-gray-800">
+  <!-- ヘッダー -->
+  <header class="fixed w-full bg-white shadow-md z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html" class="flex items-center">
+        <h1 class="text-2xl font-bold text-trust-blue">株式会社フラット</h1>
+      </a>
+      
+      <!-- PC用ナビゲーション -->
+      <nav class="hidden md:flex items-center">
+        <ul class="flex space-x-6">
+          <li><a href="index.html" class="hover:text-trust-blue transition-colors">ホーム</a></li>
+          <li><a href="service.html" class="hover:text-trust-blue transition-colors">事業内容</a></li>
+          <li><a href="works.html" class="hover:text-trust-blue transition-colors">施工事例</a></li>
+          <li><a href="news.html" class="hover:text-trust-blue transition-colors">お知らせ</a></li>
+          <li><a href="faq.html" class="text-trust-blue font-medium hover:text-safety-orange transition-colors">よくある質問</a></li>
+          <li><a href="contact.html" class="bg-safety-orange text-white px-4 py-2 rounded hover:bg-opacity-90 transition-colors">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      
+      <!-- モバイル用メニューボタン -->
+      <button class="md:hidden text-trust-blue" id="mobile-menu-button">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    
+    <!-- モバイル用ナビゲーション -->
+    <nav class="md:hidden hidden bg-white" id="mobile-menu">
+      <ul class="container mx-auto px-4 py-2 space-y-3">
+        <li><a href="index.html" class="block py-2">ホーム</a></li>
+        <li><a href="service.html" class="block py-2">事業内容</a></li>
+        <li><a href="works.html" class="block py-2">施工事例</a></li>
+        <li><a href="news.html" class="block py-2">お知らせ</a></li>
+        <li><a href="faq.html" class="block py-2 text-trust-blue font-medium">よくある質問</a></li>
+        <li><a href="contact.html" class="block py-2 mt-4 bg-safety-orange text-white px-4 py-2 rounded text-center">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ページタイトル -->
+  <section class="pt-32 pb-12 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center text-trust-blue">よくある質問</h2>
+      <p class="text-center mt-4 text-lg">お客様からよくいただくご質問にお答えします</p>
+    </div>
+  </section>
+
+  <!-- FAQ カテゴリータブ -->
+  <section class="py-8 bg-white border-b">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap justify-center">
+        <button class="faq-tab active m-2 px-4 py-2 rounded-full bg-trust-blue text-white" data-tab="all">すべて</button>
+        <button class="faq-tab m-2 px-4 py-2 rounded-full bg-gray-200 hover:bg-trust-blue hover:text-white transition-colors" data-tab="estimate">お見積もりについて</button>
+        <button class="faq-tab m-2 px-4 py-2 rounded-full bg-gray-200 hover:bg-trust-blue hover:text-white transition-colors" data-tab="construction">工事について</button>
+        <button class="faq-tab m-2 px-4 py-2 rounded-full bg-gray-200 hover:bg-trust-blue hover:text-white transition-colors" data-tab="prefab">仮設ハウスについて</button>
+        <button class="faq-tab m-2 px-4 py-2 rounded-full bg-gray-200 hover:bg-trust-blue hover:text-white transition-colors" data-tab="other">その他</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ 一覧 -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto">
+        <!-- お見積もりについて -->
+        <div class="mb-12 animate-on-scroll">
+          <h3 class="text-2xl font-bold mb-6 text-trust-blue">お見積もりについて</h3>
+          
+          <!-- Q1 -->
+          <div class="faq-item mb-6 border border-gray-200 rounded-lg overflow-hidden" data-category="estimate">
+            <div class="faq-question bg-gray-50 px-6 py-4 cursor-pointer flex justify-between items-center">
+              <h4 class="font-bold text-lg">見積もりは無料ですか？</h4>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-trust-blue transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            <div class="faq-answer px-6 py-4 hidden">
+              <p>はい、現地調査・お見積りは無料で承っております。お気軽にお問い合わせください。</p>
+            </div>
+          </div>
+          
+          <!-- Q2 -->
+          <div class="faq-item mb-6 border border-gray-200 rounded-lg overflow-hidden" data-category="estimate">
+            <div class="faq-question bg-gray-50 px-6 py-4 cursor-pointer flex justify-between items-center">
+              <h4 class="font-bold text-lg">見積もりから工事開始までどのくらいかかりますか？</h4>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-trust-blue transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            <div class="faq-answer px-6 py-4 hidden">
+              <p>現地調査後、通常2〜3営業日以内にお見積りをご提出いたします。お見積りにご納得いただき、ご契約いただいた後、工事の規模や時期にもよりますが、一般的には1週間〜2週間程度で工事を開始することが可能です。繁忙期や大規模工事の場合は、もう少しお時間をいただくことがございます。</p>
+            </div>
+          </div>
+          
+          <!-- Q3 -->
+          <div class="faq-item mb-6 border border-gray-200 rounded-lg overflow-hidden" data-category="estimate">
+            <div class="faq-question bg-gray-50 px-6 py-4 cursor-pointer flex justify-between items-center">
+              <h4 class="font-bold text-lg">見積もりの際に必要な情報は何ですか？</h4>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-trust-blue transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            <div class="faq-answer px-6 py-4 hidden">
+              <p>以下の情報をお知らせいただけると、より正確なお見積りが可能です。</p>
+              <ul class="list-disc pl-5 mt-2">
+                <li>工事場所の住所</li>
+                <li>建物の種類（戸建て、マンション、商業施設など）</li>
+                <li>建物の階数と高さ</li>
+                <li>足場が必要な面積や範囲</li>
+                <li>工事の種類（外壁塗装、屋根修理など）</li>
+                <li>工事予定時期と期間</li>
+              </ul>
+              <p class="mt-2">ただし、詳細な情報がなくても、まずはお気軽にお問い合わせください。現地調査の際に必要な情報を確認させていただきます。</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 工事について -->
+        <div class="mb-12 animate-on-scroll">
+          <h3 class="text-2xl font-bold mb-6 text-trust-blue">工事について</h3>
+          
+          <!-- Q4 -->
+          <div class="faq-item mb-6 border border-gray-200 rounded-lg overflow-hidden" data-category="construction">
+            <div class="faq-question bg-gray-50 px-6 py-4 cursor-pointer flex justify-between items-center">
+              <h4 class="font-bold text-lg">足場の設置にはどのくらいの時間がかかりますか？</h4>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-trust-blue transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            <div class="faq-answer px-6 py-4 hidden">
+              <p>建物の規模や形状によって異なりますが、一般的な2階建て戸建住宅の場合、1〜2日程度で設置が完了します。マンションなどの大規模な建物では、数日〜1週間程度かかる場合があります。</p>
+            </div>
+          </div>
+          
+          <!-- Q5 -->
+          <div class="faq-item mb-6 border border-gray-200 rounded-lg overflow-hidden" data-category="construction">
+            <div class="faq-question bg-gray-50 px-6 py-4 cursor-pointer flex justify-between items-center">
+              <h4 class="font-bold text-lg">足場を設置する際の騒音や振動はありますか？</h4>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-trust-blue transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            <div class="faq-answer px-6 py-4 hidden">
+              <p>足場の組立・解体作業では、ある程度の作業音が発生します。ただし、当社では騒音を最小限に抑える工法や工具を使用し、近隣の方々へのご迷惑を極力減らすよう配慮しております。また、早朝や夜間の作業は行わず、法令で定められた時間内での作業を徹底しています。</p>
+            </div>
+          </div>
+          
+          <!-- Q6 -->
+          <div class="faq-item mb-6 border border-gray-200 rounded-lg overflow-hidden" data-category="construction">
+            <div class="faq-question bg-gray-50 px-6 py-4 cursor-pointer flex justify-between items-center">
+              <h4 class="font-bold text-lg">足場を設置すると窓や玄関が使えなくなりますか？</h4>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-trust-blue transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            <div class="faq-answer px-6 py-4 hidden">
+              <p>基本的に、日常生活に支障が出ないよう設計・施工いたします。玄関や主要な出入り口は通常通り使用できるよう配慮し、必要に応じて仮設の出入り口や通路を設けることも可能です。窓については、工事の内容によっては一時的に使用できなくなる場合がありますが、事前にご相談の上、ご不便が最小限になるよう調整いたします。</p>
+            </div>
+          </div>
+          
+          <!-- Q7 -->
+          <div class="faq-item mb-6 border border-gray-200 rounded-lg overflow-hidden" data-category="construction">
+            <div class="faq-question bg-gray-50 px-6 py-4 cursor-pointer flex justify-between items-center">
+              <h4 class="font-bold text-lg">雨天時も工事は行いますか？</h4>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-trust-blue transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            <div class="faq-answer px-6 py-4 hidden">
+              <p>足場の組立・解体作業は、安全面を考慮し、基本的に雨天時や強風時には行いません。ただし、軽い雨の場合や、建物内部での作業が主となる場合は、状況に応じて作業を継続することもあります。天候による工程の変更については、随時ご連絡・ご相談させていただきます。</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 仮設ハウスについて -->
+        <div class="mb-12 animate-on-scroll">
+          <h3 class="text-2xl font-bold mb-6 text-trust-blue">仮設ハウスについて</h3>
+          
+          <!-- Q8 -->
+          <div class="faq-item mb-6 border border-gray-200 rounded-lg overflow-hidden" data-category="prefab">
+            <div class="faq-question bg-gray-50 px-6 py-4 cursor-pointer flex justify-between items-center">
+              <h4 class="font-bold text-lg">仮設ハウスのリース期間に制限はありますか？</h4>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-trust-blue transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            <div class="faq-answer px-6 py-4 hidden">
+              <p>最短1ヶ月からリース可能で、長期のリースも承っております。工期に合わせて柔軟に対応いたしますので、ご相談ください。</p>
+            </div>
+          </div>
+          
+          <!-- Q9 -->
+          <div class="faq-item mb-6 border border-gray-200 rounded-lg overflow-hidden" data-category="prefab">
+            <div class="faq-question bg-gray-50 px-6 py-4 cursor-pointer flex justify-between items-center">
+              <h4 class="font-bold text-lg">仮設ハウスにはどのような設備が付いていますか？</h4>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-trust-blue transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            <div class="faq-answer px-6 py-4 hidden">
+              <p>基本的には、照明設備、コンセント、エアコン（オプション）が設置されています。用途に応じて、机・椅子などの備品、給排水設備、トイレなどのオプションを追加することも可能です。詳細は個別にご相談ください。</p>
+            </div>
+          </div>
+          
+          <!-- Q10 -->
+          <div class="faq-item mb-6 border border-gray-200 rounded-lg overflow-hidden" data-category="prefab">
+            <div class="faq-question bg-gray-50 px-6 py-4 cursor-pointer flex justify-between items-center">
+              <h4 class="font-bold text-lg">仮設ハウスの設置に必要なスペースはどのくらいですか？</h4>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-trust-blue transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            <div class="faq-answer px-6 py-4 hidden">
+              <p>仮設ハウスのサイズによって異なりますが、一般的な1坪タイプ（約2m×1m）の場合、設置スペースとして最低でも2.5m×1.5m程度の平坦な場所が必要です。また、搬入経路の確保も重要ですので、事前に現地調査をさせていただき、最適な設置場所をご提案いたします。</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- その他 -->
+        <div class="animate-on-scroll">
+          <h3 class="text-2xl font-bold mb-6 text-trust-blue">その他</h3>
+          
+          <!-- Q11 -->
+          <div class="faq-item mb-6 border border-gray-200 rounded-lg overflow-hidden" data-category="other">
+            <div class="faq-question bg-gray-50 px-6 py-4 cursor-pointer flex justify-between items-center">
+              <h4 class="font-bold text-lg">対応エリアはどこまでですか？</h4>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-trust-blue transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            <div class="faq-answer px-6 py-4 hidden">
+              <p>福岡県全域および佐賀県の一部地域を中心に対応しております。その他の地域についても、案件の規模や内容によっては対応可能な場合がありますので、まずはお問い合わせください。</p>
+            </div>
+          </div>
+          
+          <!-- Q12 -->
+          <div class="faq-item mb-6 border border-gray-200 rounded-lg overflow-hidden" data-category="other">
+            <div class="faq-question bg-gray-50 px-6 py-4 cursor-pointer flex justify-between items-center">
+              <h4 class="font-bold text-lg">保険には加入していますか？</h4>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-trust-blue transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            <div class="faq-answer px-6 py-4 hidden">
+              <p>はい、当社では工事中の事故や損害に備えて、各種保険（賠償責任保険、工事保険など）に加入しております。万が一の際にも適切に対応できる体制を整えておりますので、ご安心ください。</p>
+            </div>
+          </div>
+          
+          <!-- Q13 -->
+          <div class="faq-item mb-6 border border-gray-200 rounded-lg overflow-hidden" data-category="other">
+            <div class="faq-question bg-gray-50 px-6 py-4 cursor-pointer flex justify-between items-center">
+              <h4 class="font-bold text-lg">支払い方法は何がありますか？</h4>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-trust-blue transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            <div class="faq-answer px-6 py-4 hidden">
+              <p>お支払い方法は、銀行振込または現金でのお支払いに対応しております。お支払い条件については、工事の規模や内容に応じて個別にご相談させていただきます。一般的には、着手金・中間金・完了金の分割払いや、月末締め翌月末払いなどの方法があります。</p>
+            </div>
+          </div>
+          
+          <!-- Q14 -->
+          <div class="faq-item border border-gray-200 rounded-lg overflow-hidden" data-category="other">
+            <div class="faq-question bg-gray-50 px-6 py-4 cursor-pointer flex justify-between items-center">
+              <h4 class="font-bold text-lg">足場工事と同時に外壁塗装なども依頼できますか？</h4>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-trust-blue transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            <div class="faq-answer px-6 py-4 hidden">
+              <p>当社は足場工事を専門としておりますが、提携している優良な塗装業者や建設会社をご紹介することが可能です。足場と本体工事を一括でご依頼いただくことで、工程の調整がスムーズになり、全体的なコスト削減にもつながる場合があります。ご希望の場合は、お問い合わせの際にその旨をお伝えください。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="max-w-3xl mx-auto mt-16 text-center">
+        <p class="mb-6">ご質問がこちらに掲載されていない場合は、お気軽にお問い合わせください。</p>
+        <a href="contact.html" class="inline-block bg-safety-orange text-white px-6 py-3 rounded hover:bg-opacity-90 transition-colors">お問い合わせはこちら</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="bg-trust-blue text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+        <div class="text-center md:text-left mb-6 md:mb-0">
+          <h2 class="text-2xl font-bold mb-2">株式会社フラット</h2>
+          <p class="text-sm">〒819-0383 福岡県福岡市西区田尻東1丁目14-3</p>
+          <p class="text-sm">TEL: 092-834-5315</p>
+        </div>
+        
+        <nav>
+          <ul class="flex flex-wrap justify-center">
+            <li class="mx-3 my-2"><a href="index.html" class="hover:text-safety-orange transition-colors">ホーム</a></li>
+            <li class="mx-3 my-2"><a href="service.html" class="hover:text-safety-orange transition-colors">事業内容</a></li>
+            <li class="mx-3 my-2"><a href="works.html" class="hover:text-safety-orange transition-colors">施工事例</a></li>
+            <li class="mx-3 my-2"><a href="news.html" class="hover:text-safety-orange transition-colors">お知らせ</a></li>
+            <li class="mx-3 my-2"><a href="faq.html" class="hover:text-safety-orange transition-colors">よくある質問</a></li>
+            <li class="mx-3 my-2"><a href="contact.html" class="hover:text-safety-orange transition-colors">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+      <div class="text-center">
+        <p class="text-sm">&copy; 2025 株式会社フラット All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

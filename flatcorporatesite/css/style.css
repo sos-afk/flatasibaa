@@ -1,0 +1,147 @@
+/* 
+ * 株式会社フラット コーポレートサイト スタイルシート
+ * 
+ * カラーパレット:
+ * - ベースカラー: ホワイト (#FFFFFF) および ライトグレー (#F5F5F5)
+ * - メインカラー: トラストブルー (#2A4A87)
+ * - アクセントカラー: セーフティオレンジ (#FF7F00)
+ */
+
+/* ===== 基本設定 ===== */
+:root {
+  --trust-blue: #2A4A87;
+  --safety-orange: #FF7F00;
+  --light-gray: #F5F5F5;
+}
+
+/* Tailwind CSSのカスタムカラー */
+.text-trust-blue {
+  color: var(--trust-blue);
+}
+
+.bg-trust-blue {
+  background-color: var(--trust-blue);
+}
+
+.text-safety-orange {
+  color: var(--safety-orange);
+}
+
+.bg-safety-orange {
+  background-color: var(--safety-orange);
+}
+
+/* フォント設定 */
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Sans JP', 'Montserrat', sans-serif;
+}
+
+/* ===== アニメーション ===== */
+/* フェードイン */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-fade-in-delay {
+  animation: fadeIn 0.8s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-delay-2 {
+  animation: fadeIn 0.8s ease-out 0.6s forwards;
+  opacity: 0;
+}
+
+/* スクロールアニメーション */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== ヘッダー ===== */
+header {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ===== メインビジュアル ===== */
+/* メインビジュアルの背景画像設定（実際の画像が用意されたら差し替え） */
+section.pt-20.relative.h-screen {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 800 600"><rect fill="%23555" width="800" height="600"/></svg>');
+  background-size: cover;
+  background-position: center;
+}
+
+/* ===== 施工事例 ===== */
+/* フィルターボタンのアクティブ状態 */
+.filter-btn.active {
+  background-color: var(--trust-blue);
+  color: white;
+}
+
+/* ===== FAQ ===== */
+/* FAQタブのアクティブ状態 */
+.faq-tab.active {
+  background-color: var(--trust-blue);
+  color: white;
+}
+
+/* アコーディオンの矢印回転 */
+.faq-question.active svg {
+  transform: rotate(180deg);
+}
+
+/* ===== フォーム ===== */
+/* フォーム要素のフォーカス状態 */
+input:focus, textarea:focus {
+  border-color: var(--trust-blue);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(42, 74, 135, 0.2);
+}
+
+/* エラー状態のフォーム要素 */
+input.error, textarea.error {
+  border-color: #f56565;
+}
+
+.error-message {
+  color: #f56565;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* ===== レスポンシブ調整 ===== */
+@media (max-width: 768px) {
+  /* モバイル用の調整 */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* ===== ユーティリティ ===== */
+/* 画像プレースホルダー（実際の画像が用意されたら削除） */
+.bg-gray-200 {
+  background-image: linear-gradient(45deg, #e2e8f0 25%, #edf2f7 25%, #edf2f7 50%, #e2e8f0 50%, #e2e8f0 75%, #edf2f7 75%, #edf2f7 100%);
+  background-size: 20px 20px;
+}
